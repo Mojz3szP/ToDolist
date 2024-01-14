@@ -57,22 +57,18 @@
   border: none;
   width: 3px;
   height: 13px;
-  margin-top: 0px;
-  margin-bottom: 0px;
   margin-right: 5px;
-  display: flex;
-  justify-content: start;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .button__remove {
   background: orange;
   border: none;
   width: 3px;
   height: 13px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-right: 5px;
-  display: flex;
-  justify-content: center;
 }
 .list__head {
   list-style-type: none;
@@ -80,9 +76,10 @@
   font-size: 15px;
 }
 .task {
-  display: flex;
-  justify-content: start;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
 .list {
   min-width: 700px;
   display: grid;
