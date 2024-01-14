@@ -1,0 +1,14 @@
+.html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.button {
+  border: 3px black solid;
+  background-color: blue;
+  color: black;
+}
