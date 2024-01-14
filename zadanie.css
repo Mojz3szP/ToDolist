@@ -62,7 +62,7 @@
   margin-bottom: 10px;
 }
 .button__remove {
-  background: orange;
+  background: rgb(255, 77, 0);
   border: none;
   width: 3px;
   height: 13px;
@@ -84,4 +84,7 @@
   min-width: 700px;
   display: grid;
   grid-template-columns: 30px 3fr 1fr;
+}
+.changeTasksDone {
+  text-decoration: line-through;
 }
