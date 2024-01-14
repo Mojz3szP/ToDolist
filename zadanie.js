@@ -15,7 +15,9 @@
 
     for (const task of tasks) {
       htmlString += `
-            <li>
+            <li 
+                ${task.done ? 'style="text-decoration: line-through"' : ""}
+            >
                 ${task.content}
             </li>
             `;
@@ -25,6 +27,25 @@
   };
   const init = () => {
     render();
+
+    const form = document.querySelector(".js-form");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const newTaskContent = document
+        .querySelector(".js-newTasks")
+        .value.trim();
+      console.log(newTaskContent);
+      if (newTaskContent === "") {
+        return;
+      }
+
+      tasks.push({
+        content: newTaskContent,
+      });
+      render();
+    });
   };
 
   init();
