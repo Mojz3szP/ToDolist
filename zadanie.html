@@ -13,14 +13,20 @@
     />
     <title>Lista zadań</title>
   </head>
-  <body>
+  <body class="background">
     <h1 class="head">Lista zadań</h1>
-    <a class="formHead">Dodaj nowe zadanie</a>q
-    <form class="js-form">
-      <input class="js-newTasks input" placeholder="Co jest do zrobienia?" />
-      <button class="button">Dodaj zadanie</button>
+    <a class="formHead">Dodaj nowe zadanie</a>
+
+    <form class="js-form form">
+      <input
+        class="js-newTasks input form_cell"
+        placeholder="Co jest do zrobienia?"
+      />
+      <div class="form_cell"></div>
+      <button class="button form_cell">Dodaj zadanie</button>
     </form>
+
     <a class="formHead">Lista zadań</a>
-    <ul class="js-tasks"></ul>
+    <ul class="js-tasks list__head"></ul>
   </body>
 </html>
