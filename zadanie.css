@@ -7,8 +7,23 @@
   box-sizing: inherit;
 }
 
+.head {
+  font-weight: bolder;
+}
+
 .button {
-  border: 3px black solid;
-  background-color: blue;
-  color: black;
+  margin: 20px;
+  padding: 5px;
+  background-color: rgb(64, 150, 196);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+.formHead {
+  border: none;
+  font-size: 20px;
+  margin: 20px;
+}
+.input {
+  border: none;
+  max-width: 700px;
 }
