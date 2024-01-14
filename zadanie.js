@@ -1,14 +1,5 @@
 {
-  const tasks = [
-    {
-      content: "Kocham Misie",
-      done: false,
-    },
-    {
-      content: "Serio",
-      done: true,
-    },
-  ];
+  const tasks = [];
   const addNewTask = (newTaskContent) => {
     tasks.push({
       content: newTaskContent,
