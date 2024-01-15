@@ -46,6 +46,7 @@
             <button class="js-remove button__remove">🗑</button>
             </div>
             </li>
+            <div class="filling"></div>
             `;
     }
 
