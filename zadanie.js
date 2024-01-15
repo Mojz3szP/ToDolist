@@ -37,7 +37,7 @@
       htmlString += `
             <li>
             <div class="list__done">
-            <button class="js-done buttsn__done">${
+            <button class="js-done button__done">${
               task.done ? "✓" : ""
             }</button>
                 <div class=${task.done ? "changeTasksDone" : "list"}>${
