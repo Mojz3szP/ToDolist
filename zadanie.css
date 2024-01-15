@@ -9,11 +9,14 @@
 
 .background {
   max-width: 800px;
+  background-color: silver;
 }
 
 .head {
   font-weight: bolder;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  margin-left: 40px;
 }
 
 .button {
@@ -31,7 +34,9 @@
   padding: 5px;
   border: none;
   display: grid;
-  grid-template-columns: 1fr 2fr 140px;
+  grid-template-columns: 4fr 1fr;
+  background-color: white;
+  margin-left: 60px;
 }
 .form__cell {
   padding: 20px;
@@ -39,12 +44,18 @@
   justify-content: center;
 }
 .formHead {
-  margin-top: 40px;
+  margin-top: 20px;
   border: none;
-  font-size: 20px;
-  margin-left: 20px;
+  font-size: 22px;
+  margin-left: 60px;
   font-weight: bolder;
-  padding-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  background-color: white;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: start;
 }
 .input {
   border: none;
@@ -55,24 +66,31 @@
 .button__done {
   background: green;
   border: none;
-  width: 3px;
-  height: 13px;
-  margin-right: 5px;
+  width: 10px;
+  height: 20px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
 }
 .button__remove {
   background: rgb(255, 77, 0);
   border: none;
-  width: 3px;
-  height: 13px;
+  width: 10px;
+  height: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  color: black;
+  font-weight: bolder;
 }
 .list__head {
   list-style-type: none;
-  margin-top: 15px;
+  margin-top: 2px;
   font-size: 15px;
 }
 .task {
@@ -81,10 +99,28 @@
 }
 
 .list {
-  min-width: 700px;
-  display: grid;
-  grid-template-columns: 30px 3fr 1fr;
+  margin-left: 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .changeTasksDone {
   text-decoration: line-through;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.symbol {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+.list__done {
+  display: grid;
+  grid-template-columns: 30px 3fr 1fr;
+  margin-left: 20px;
+  background: white;
 }
