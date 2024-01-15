@@ -136,9 +136,9 @@
   border-bottom: silver 1px solid;
 }
 .filling {
-  margin-left: 20px;
+  margin-left: 60px;
   display: grid;
   grid-template-columns: 30px 3fr 60px;
   background: white;
-  height: 10px;
+  height: 40px;
 }
