@@ -1,5 +1,3 @@
-# To do list
-
 Welcome to your safe and simple list of tasks.
 
 ## About
