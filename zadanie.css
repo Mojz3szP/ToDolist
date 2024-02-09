@@ -9,7 +9,7 @@
 
 .background {
   max-width: 800px;
-  background-color: silver;
+  background-color: rgb(252, 249, 249);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -37,13 +37,15 @@
 }
 
 .form {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 5px;
   border: none;
   display: grid;
   grid-template-columns: 4fr 1fr;
   background-color: white;
   margin-left: 60px;
+  border: silver 1px solid;
+  border-top: none;
 }
 .form__cell {
   padding: 20px;
@@ -56,13 +58,27 @@
   font-size: 17px;
   margin-left: 60px;
   font-weight: bolder;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 10px;
   background-color: white;
   display: flex;
   justify-content: start;
-  border-bottom: silver 2px solid;
+  border: silver 1px solid;
+}
+.formHead__second {
+  margin-top: 20px;
+  border: none;
+  font-size: 17px;
+  margin-left: 60px;
+  font-weight: bolder;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: start;
+  border: silver 1px solid;
 }
 .input {
   border: none;
@@ -72,36 +88,43 @@
   border: 1px silver solid;
 }
 .button__done {
+  margin-left: 10px;
   background: #469346;
   border: none;
-  width: 10px;
-  height: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  width: 20px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 20px;
   color: rgb(255, 255, 255);
-  margin-left: 20px;
 }
 .button__remove {
-  background: rgb(185, 13, 76);
+  background: rgb(185, 24, 13);
   border: none;
-  width: 10px;
-  height: 20px;
-  margin-top: 10px;
-  font-size: 15px;
+  width: 20px;
+  height: 30px;
+  margin-top: 5px;
+  font-size: 20px;
   color: rgb(255, 255, 255);
   margin-left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 20px;
 }
 .list__head {
   list-style-type: none;
-  margin-top: 2px;
   font-size: 15px;
+  margin-left: 60px;
+  background-color: white;
+  min-height: 40px;
+  border: 1px solid silver;
+  margin-top: 0px;
+  border-top: NONE;
+  padding-bottom: 20px;
 }
 .task {
   margin-top: 10px;
@@ -130,10 +153,17 @@
 }
 .list__done {
   display: grid;
-  grid-template-columns: 30px 3fr 60px;
-  margin-left: 20px;
+  grid-template-columns: auto 3fr auto;
   background: white;
-  border-bottom: silver 1px solid;
+  font-size: 10px;
+  min-height: 50px;
+  padding-left: 0px;
+  margin-left: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid silver;
+  margin-right: 30px;
+  padding-top: 10px;
 }
 .filling {
   margin-left: 60px;
