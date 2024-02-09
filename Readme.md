@@ -9,7 +9,7 @@ In my project you can create your task list and make your time more effective.
 
 ## Demo
 
-![Demo](./Zadanie%20domowe%206%20moduł/demo.gif)
+![Demo](demo.gif)
 
 ## Link
 
