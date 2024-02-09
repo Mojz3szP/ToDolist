@@ -1,3 +1,5 @@
+# To Do List
+
 Welcome to your safe and simple list of tasks.
 
 ## About
@@ -11,7 +13,7 @@ In my project you can create your task list and make your time more effective.
 
 ## Link
 
-[Do ypur own list - click there](https://mojz3szp.github.io/ToDolist/zadanie.html)
+[Do your own list - click there](https://mojz3szp.github.io/ToDolist/zadanie.html)
 
 ## Technologies used
 
