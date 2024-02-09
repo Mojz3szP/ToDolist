@@ -8,16 +8,19 @@
 }
 
 .background {
-  max-width: 800px;
+  max-width: 1200px;
   background-color: rgb(252, 249, 249);
   font-family: "Montserrat", sans-serif;
 }
 
 .head {
   font-weight: bolder;
-  margin-bottom: 20px;
   font-size: 30px;
-  margin-left: 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
+  padding: 30px;
+  margin: 5px 0;
 }
 
 .button {
@@ -30,6 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100px;
 }
 
 .click:hover {
@@ -37,48 +41,62 @@
 }
 
 .form {
-  margin-bottom: 20px;
-  padding: 5px;
-  border: none;
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
   background-color: white;
-  margin-left: 60px;
-  border: silver 1px solid;
-  border-top: none;
+  padding: 30px;
+  margin: 5px 0;
+  box-shadow: 0px 3px 10px 0px rgba(179, 179, 179, 1);
 }
+@media (max-width: 500px) {
+  .form {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .button {
+    grid-row: 2;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
 .form__cell {
   padding: 20px;
   display: flex;
   justify-content: center;
+  max-width: 700px;
 }
 .formHead {
   margin-top: 20px;
   border: none;
   font-size: 17px;
-  margin-left: 60px;
   font-weight: bolder;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
+  padding: 30px;
+  margin: 5px 0;
+  box-shadow: 0px 3px 10px 0px rgba(179, 179, 179, 1);
   background-color: white;
-  display: flex;
-  justify-content: start;
-  border: silver 1px solid;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
 }
 .formHead__second {
   margin-top: 20px;
   border: none;
   font-size: 17px;
-  margin-left: 60px;
   font-weight: bolder;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
+  padding: 30px;
+  margin: 5px 0;
+  box-shadow: 0px 3px 10px 0px rgba(179, 179, 179, 1);
   background-color: white;
-  display: flex;
-  justify-content: start;
-  border: silver 1px solid;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
 }
 .input {
   border: none;
@@ -86,6 +104,7 @@
   height: 20px;
   margin: 20px;
   border: 1px silver solid;
+  max-width: 700px;
 }
 .button__done {
   margin-left: 10px;
@@ -118,13 +137,15 @@
 .list__head {
   list-style-type: none;
   font-size: 15px;
-  margin-left: 60px;
   background-color: white;
   min-height: 40px;
-  border: 1px solid silver;
-  margin-top: 0px;
-  border-top: NONE;
-  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
+  padding: 30px;
+  margin: 5px 0;
+  box-shadow: 0px 3px 10px 0px rgba(179, 179, 179, 1);
+  max-width: 697px;
 }
 .task {
   margin-top: 10px;
@@ -155,7 +176,7 @@
   display: grid;
   grid-template-columns: auto 3fr auto;
   background: white;
-  font-size: 10px;
+  font-size: 14px;
   min-height: 50px;
   padding-left: 0px;
   margin-left: 0px;

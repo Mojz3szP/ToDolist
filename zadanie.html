@@ -15,21 +15,26 @@
     <title>Lista zadań</title>
   </head>
   <body class="background">
-    <h1 class="head">Lista zadań</h1>
-    <a class="formHead">Dodaj nowe zadanie</a>
+    <header class="container">
+      <h1 class="head">Lista zadań</h1>
+    </header>
+    <section class="container">
+      <a class="formHead">Dodaj nowe zadanie</a>
 
-    <form class="js-form form">
-      <input
-        class="js-newTasks input form_cell"
-        placeholder="Co jest do zrobienia?"
-        autofocus
-      />
-      <button class="button form_cell click">Dodaj zadanie</button>
-    </form>
-
-    <a class="formHead__second">Lista zadań</a>
-    <ul class="list__head">
-      <li class="js-tasks"></li>
-    </ul>
+      <form class="js-form form">
+        <input
+          class="js-newTasks input form_cell"
+          placeholder="Co jest do zrobienia?"
+          autofocus
+        />
+        <button class="button form_cell click">Dodaj zadanie</button>
+      </form>
+    </section>
+    <section class="container">
+      <a class="formHead">Lista zadań</a>
+      <ul class="list__head">
+        <li class="js-tasks"></li>
+      </ul>
+    </section>
   </body>
 </html>
