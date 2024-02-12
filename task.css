@@ -5,6 +5,7 @@
   padding: 0;
   font-size: 20px;
   color: rgb(255, 255, 255);
+  transition: background 1s, 2s;
 }
 
 .button__task--done {
@@ -12,9 +13,11 @@
 }
 .click__task:hover {
   background: #1aff00;
+  transform: translateX(50%);
 }
 .click__task--remove:hover {
   background: #fc6100;
+  transform: translateX(-50%);
 }
 
 .button__task--remove {
@@ -43,9 +46,5 @@
   font-size: 14px;
   min-height: 50px;
   padding: 10px;
-  padding-bottom: 10px;
-  padding-top: 10px;
   border-bottom: 1px solid silver;
-  margin-right: 30px;
-  padding-top: 10px;
 }
