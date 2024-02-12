@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./ikona.png" />
     <link href="./zadanie.css" rel="stylesheet" />
+    <link href="./body.css" rel="stylesheet" />
+    <link href="./form.css" rel="stylesheet" />
+    <link href="./section.css" rel="stylesheet" />
+    <link href="./task.css" rel="stylesheet" />
     <script defer src="./zadanie.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,10 +20,10 @@
   </head>
   <body class="background">
     <header class="container">
-      <h1 class="head">Lista zadań</h1>
+      <h1>Lista zadań</h1>
     </header>
     <section class="container">
-      <a class="formHead">Dodaj nowe zadanie</a>
+      <a class="container__header">Dodaj nowe zadanie</a>
 
       <form class="js-form form">
         <input
@@ -27,12 +31,13 @@
           placeholder="Co jest do zrobienia?"
           autofocus
         />
+
         <button class="button form_cell click">Dodaj zadanie</button>
       </form>
     </section>
     <section class="container">
-      <a class="formHead">Lista zadań</a>
-      <ul class="list__head">
+      <a class="container__header--second">Lista zadań</a>
+      <ul class="list__tasks">
         <li class="js-tasks"></li>
       </ul>
     </section>

@@ -1,0 +1,14 @@
+.html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.background {
+  max-width: 1200px;
+  background-color: rgb(252, 249, 249);
+  font-family: "Montserrat", sans-serif;
+}
