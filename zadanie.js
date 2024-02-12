@@ -43,7 +43,7 @@
                 <div class=${task.done ? "changeTasksDone" : "task"}>${
         task.content
       }</div>
-            <button class="js-remove button__task--remove button__task click__task--removes">🗑</button>
+            <button class="js-remove button__task--remove button__task click__task--remove">🗑</button>
             </div>
             </li>
             `;
