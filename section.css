@@ -5,7 +5,6 @@
   background-color: white;
   padding: 20px;
   margin: 5px 0;
-  box-shadow: 0px 3px 10px 0px rgba(179, 179, 179, 1);
 }
 @media (max-width: 757px) {
   .form {
@@ -36,11 +35,11 @@
   color: rgb(255, 255, 255);
   border: none;
   font-size: 15px;
-  transition: 1s, linear;
+  transition: 1s;
 }
 .click:hover {
   background-color: aqua;
-  transform: rotate(360deg);
+  transform: scale(1.1);
 }
 .input {
   font-size: 15px;
@@ -56,7 +55,6 @@
   font-weight: bolder;
   padding: 30px;
   margin: 5px 0;
-  box-shadow: 0px 3px 10px 0px rgba(179, 179, 179, 1);
   background-color: white;
   display: grid;
   grid-template-columns: 1fr auto;
@@ -73,5 +71,4 @@
   display: grid;
   grid-template-columns: 1fr auto;
   grid-gap: 20px;
-  border-bottom: 1px solid silver;
 }
