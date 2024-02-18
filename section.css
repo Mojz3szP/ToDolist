@@ -41,7 +41,7 @@
 }
 .click:hover {
   background-color: aqua;
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 .input {
   font-size: 15px;

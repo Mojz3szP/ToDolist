@@ -1,25 +1,46 @@
 {
-  const tasks = [];
+  let tasks = [];
+
+  const removeTasks = (TtaskIndex) => {
+    tasks = [...tasks.slice(0, taskIndex), ...tasks.slice(taskIndex + 1)];
+    render();
+  };
+
+  const ToggleTasksDone = (taskIndex) => {
+    tasks = [
+      ...tasks.slice(0, taskIndex),
+      {
+        ...tasks[taskIndex],
+        done: !tasks[taskIndex].done,
+      },
+      ...tasks.slice(taskIndex + 1),
+    ];
+    render();
+  };
   const addNewTask = (newTaskContent) => {
-    tasks.push({
-      content: newTaskContent,
-      done: false,
-    });
+    tasks = [...tasks, { content: newTaskContent }];
     render();
   };
-  const removeTasks = (index) => {
-    tasks.splice(index, 1);
+
+  const DoneTasksHide = () => {
+    DoneTasksHide = !DoneTasksHide;
     render();
   };
-  const ToggleTasksDone = (index) => {
-    tasks[index].done = !tasks[index].done;
+
+  const allDone = () => {
+    tasks = tasks.map((task) => ({
+      ...task,
+      done: true,
+    }));
     render();
   };
+
   const bindEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove");
-    removeButtons.forEach((removeButtons, index) => {
+
+    removeButtons.forEach((removeButtons, taskindex) => {
       removeButtons.addEventListener("click", () => {
-        removeTasks(index);
+        removeTasks(taskindex);
       });
     });
     const toggleDoneButtons = document.querySelectorAll(".js-done");
@@ -30,26 +51,34 @@
     });
   };
 
-  const render = () => {
-    let htmlString = "";
-
-    for (const task of tasks) {
-      htmlString += `
+  const renderTasks = () => {
+    const taskToHTML = (task) => `
             <li>
             <div class="task__done">
             <button class="js-done button__task button__task--done click__task">${
               task.done ? "✓" : ""
             }</button>
                 <div class=${task.done ? "changeTasksDone" : "task"}>${
-        task.content
-      }</div>
+      task.content
+    }</div>
             <button class="js-remove button__task--remove button__task click__task--remove">🗑</button>
             </div>
             </li>
             `;
-    }
 
-    document.querySelector(".js-tasks").innerHTML = htmlString;
+    const tasksElement = document.querySelector(".js-tasks");
+    tasksElement.innerHTML = tasks.map(taskToHTML).join("");
+  };
+
+  const ButtonsEvents = () => {
+    const toggleNatureOfTasks = document.querySelector("js-alldone");
+    if (allDone) {
+      toggleNatureOfTasks.addEventListener(click, allDone);
+    }
+  };
+
+  const render = () => {
+    renderTasks();
     bindEvents();
   };
 
@@ -70,7 +99,6 @@
     render();
 
     const form = document.querySelector(".js-form");
-
     form.addEventListener("submit", onFormSubmit);
   };
 
