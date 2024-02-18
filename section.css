@@ -31,7 +31,7 @@
 .button {
   margin: 17px;
   padding: 10px;
-  background-color: rgb(7, 15, 245);
+  background-color: rgb(7, 146, 245);
   color: rgb(255, 255, 255);
   border: none;
   font-size: 15px;
@@ -51,8 +51,6 @@
 .container__header {
   margin-top: 20px;
   border: none;
-  font-size: 17px;
-  font-weight: bolder;
   padding: 30px;
   margin: 5px 0;
   background-color: white;
@@ -61,10 +59,8 @@
   grid-gap: 20px;
 }
 .container__header--second {
-  margin-top: 20px;
+  margin-top: 10px;
   border: none;
-  font-size: 17px;
-  font-weight: bolder;
   padding: 30px;
   margin: 0;
   background-color: white;

@@ -9,6 +9,7 @@
 
 .background {
   max-width: 1200px;
+  font-weight: bolder;
   background-color: rgb(252, 249, 249);
   font-family: "Montserrat", sans-serif;
 }
