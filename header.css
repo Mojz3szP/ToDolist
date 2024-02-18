@@ -1,9 +1,7 @@
 .head {
-  font-weight: bolder;
-  font-size: 30px;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-gap: 20px;
-  padding: 20px;
+  padding: 10px;
   margin: 5px 0;
 }

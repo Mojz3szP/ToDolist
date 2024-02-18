@@ -31,12 +31,15 @@
           placeholder="Co jest do zrobienia?"
           autofocus
         />
-
         <button class="button form_cell click">Dodaj zadanie</button>
       </form>
     </section>
     <section class="container">
-      <h2 class="container__header--second">Lista zadań</h2>
+      <div class="container__header--withButton">
+        <h2 class="container__header--second">Lista zadań</h2>
+        <button>Ukryj ukończone</button>
+        <button>Ukończ wszystkie</button>
+      </div>
       <ul class="list__tasks">
         <li class="js-tasks"></li>
       </ul>

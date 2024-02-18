@@ -3,7 +3,7 @@
   grid-template-columns: 1fr auto;
   grid-gap: 20px;
   background-color: white;
-  padding: 20px;
+  padding: 5px;
   margin: 5px 0;
 }
 @media (max-width: 757px) {
@@ -19,8 +19,8 @@
 }
 .container {
   max-width: 900px;
-  margin: 0 auto;
   padding: 20px;
+  margin: 0 auto;
 }
 .form__cell {
   padding: 20px;
@@ -29,8 +29,10 @@
   max-width: 700px;
 }
 .button {
-  margin: 17px;
+  min-width: 30px;
+  height: 12px;
   padding: 10px;
+  text-align: center;
   background-color: rgb(7, 146, 245);
   color: rgb(255, 255, 255);
   border: none;
@@ -43,15 +45,15 @@
 }
 .input {
   font-size: 15px;
-  height: 20px;
+  min-height: 20px;
   border: 1px silver solid;
-  padding: 10px;
-  margin: 17px;
+  padding: 5px;
+  margin-left: 10px;
 }
 .container__header {
   margin-top: 20px;
   border: none;
-  padding: 30px;
+  padding: 10px;
   margin: 5px 0;
   background-color: white;
   display: grid;
@@ -59,12 +61,15 @@
   grid-gap: 20px;
 }
 .container__header--second {
-  margin-top: 10px;
   border: none;
-  padding: 30px;
+  padding: 10px;
   margin: 0;
   background-color: white;
   display: grid;
   grid-template-columns: 1fr auto;
+  grid-gap: 20px;
+}
+.container__header--withButton {
+  grid-template-columns: 1fr auto 2fr 2fr;
   grid-gap: 20px;
 }
