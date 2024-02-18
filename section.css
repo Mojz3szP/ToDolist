@@ -70,6 +70,7 @@
   grid-gap: 20px;
 }
 .container__header--withButton {
-  grid-template-columns: 1fr auto 2fr 2fr;
+  display: grid;
+  grid-template-columns: 3fr auto 1fr 1fr;
   grid-gap: 20px;
 }

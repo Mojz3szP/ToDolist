@@ -47,3 +47,13 @@
   min-height: 50px;
   padding: 10px;
 }
+.button__task--all {
+  border: none;
+  color: rgb(0, 145, 255);
+  font-size: 15px;
+  align-items: center;
+}
+.click__buttonTask--all:hover {
+  color: aqua;
+  transition: 1s;
+}
