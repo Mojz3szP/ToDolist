@@ -20,7 +20,10 @@
 .container {
   max-width: 900px;
   padding: 20px;
-  margin: 0 auto;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 0 5px #ddd;
 }
 .form__cell {
   padding: 20px;
@@ -41,7 +44,7 @@
 }
 .click:hover {
   background-color: aqua;
-  transform: scale(1.03);
+  transform: scale(1.2);
 }
 .input {
   font-size: 15px;
@@ -51,15 +54,16 @@
   margin-left: 10px;
 }
 .container__header {
-  margin-top: 20px;
   border: none;
+  margin: 0;
   padding: 10px;
-  margin: 5px 0;
   background-color: white;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-gap: 20px;
+  border-bottom: 1px solid #ddd;
 }
+
 .container__header--second {
   border: none;
   padding: 10px;
@@ -71,6 +75,7 @@
 }
 .container__header--withButton {
   display: grid;
-  grid-template-columns: 3fr auto 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr;
   grid-gap: 20px;
+  border-bottom: 1px solid #ddd;
 }

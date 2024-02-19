@@ -21,6 +21,7 @@
 .button__task--remove {
   background: rgb(185, 24, 13);
 }
+
 .list__tasks {
   list-style-type: none;
   padding: 0;
@@ -48,12 +49,37 @@
   padding: 10px;
 }
 .button__task--all {
+  color: rgb(0, 90, 128);
   border: none;
-  color: rgb(0, 145, 255);
-  font-size: 15px;
-  align-items: center;
+  margin: 0 0 0 20px;
+  padding: 10px;
+  transition: 2s;
 }
-.click__buttonTask--all:hover {
+.click:hover {
   color: aqua;
-  transition: 1s;
+}
+@media (max-width: 757px) {
+  .button__done--hide {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.button__task--all {
+  grid-row: 2;
+}
+
+.button__task--all:disabled {
+  color: #ffffff;
+}
+.task__hide {
+  display: none;
+}
+
+.button__done--hide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  min-width: 30px;
 }

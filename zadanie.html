@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./ikona.png" />
     <link href="./body.css" rel="stylesheet" />
+    <link href="./header.css" rel="stylesheet" />
     <link href="./section.css" rel="stylesheet" />
     <link href="./task.css" rel="stylesheet" />
     <script defer src="./zadanie.js"></script>
@@ -17,7 +18,7 @@
     <title>Lista zadań</title>
   </head>
   <body class="background">
-    <header class="container">
+    <header class="header">
       <h1>Lista zadań</h1>
     </header>
     <section class="container">
@@ -35,13 +36,7 @@
     <section class="container">
       <div class="container__header--withButton">
         <h2 class="container__header--second">Lista zadań</h2>
-        <a></a>
-        <button class="button__task--all click__buttonTask--all js-hide">
-          Ukryj ukończone
-        </button>
-        <button class="button__task--all click__buttonTask--all js-alldone">
-          Ukończ wszystkie
-        </button>
+        <div class="js-button button__done--hide"></div>
       </div>
       <ul class="list__tasks">
         <li class="js-tasks"></li>
