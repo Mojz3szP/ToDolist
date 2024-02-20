@@ -50,24 +50,27 @@
 }
 .button__task--all {
   color: rgb(0, 90, 128);
+  background-color: white;
   border: none;
   margin: 0 0 0 20px;
   padding: 10px;
   transition: 2s;
+  font-size: 14px;
+  max-width: 300px;
 }
-.click:hover {
+.button__task--all:hover {
+  background-color: rgb(255, 255, 255);
   color: aqua;
 }
 @media (max-width: 757px) {
-  .button__done--hide {
+  .container__header--withButton {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
   }
-}
-
-.button__task--all {
-  grid-row: 2;
+  .button__task--all {
+    grid-row: 2;
+  }
 }
 
 .button__task--all:disabled {
