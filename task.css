@@ -47,10 +47,11 @@
   font-size: 14px;
   min-height: 50px;
   padding: 10px;
+  border-bottom: solid silver 2px;
 }
 .button__task--all {
   color: rgb(0, 90, 128);
-  background-color: white;
+  background-color: transparent;
   border: none;
   margin: 0 0 0 20px;
   padding: 10px;
@@ -62,27 +63,10 @@
   background-color: rgb(255, 255, 255);
   color: aqua;
 }
-@media (max-width: 757px) {
-  .container__header--withButton {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-  }
-  .button__task--all {
-    grid-row: 2;
-  }
-}
 
 .button__task--all:disabled {
   color: #ffffff;
 }
 .task__hide {
   display: none;
-}
-
-.button__done--hide {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  min-width: 30px;
 }
